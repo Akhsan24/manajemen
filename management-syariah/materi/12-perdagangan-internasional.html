@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdagangan Internasional | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .ekspor-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .impor-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .faktor-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .hambatan-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .kurs-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .kerjasama-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .dampak-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .contoh-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+
+        .badge-title { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .col { background: #f9f9f9; border-radius: 16px; padding: 1rem; }
+        .col h4 { color: #1a6e4b; margin-bottom: 0.8rem; text-align: center; }
+
+        .kerjasama-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
+        .kerjasama-card { background: #f5f5f5; border-radius: 12px; padding: 0.8rem; text-align: center; }
+        .kerjasama-card i { font-size: 1.5rem; color: #1a6e4b; margin-bottom: 0.3rem; display: block; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } .two-column { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 12: <span class="highlight">Perdagangan Internasional</span></h1>
+        <p>Memahami ekspor, impor, kurs, dan kerja sama internasional</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-globe-asia"></i> Perdagangan Internasional</h1>
+
+        <!-- Pengertian Perdagangan Internasional -->
+        <div class="pengertian-box">
+            <span class="badge-title"><i class="fas fa-info-circle"></i> PENGERTIAN PERDAGANGAN INTERNASIONAL</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Perdagangan Internasional:</strong> Perdagangan internasional adalah kegiatan jual beli barang atau jasa antara satu negara dengan negara lain.</p>
+            </div>
+            
+            <p><strong>Tujuan Perdagangan Internasional:</strong></p>
+            <ul class="list-content">
+                <li>Memenuhi kebutuhan barang yang tidak tersedia di dalam negeri</li>
+                <li>Mendapatkan keuntungan</li>
+                <li>Memperluas pasar</li>
+                <li>Menambah devisa negara</li>
+                <li>Mempererat hubungan antarnegara</li>
+            </ul>
+        </div>
+
+        <!-- A. Ekspor -->
+        <div class="ekspor-box">
+            <span class="badge-title"><i class="fas fa-arrow-up"></i> A. EKSPOR</span>
+            
+            <p><strong>Pengertian Ekspor:</strong> Ekspor adalah kegiatan menjual barang atau jasa ke luar negeri.</p>
+            
+            <p><strong>Tujuan Ekspor:</strong></p>
+            <ul class="list-content">
+                <li>Mendapatkan keuntungan</li>
+                <li>Menambah devisa negara</li>
+                <li>Memperluas pasar produk</li>
+            </ul>
+            
+            <p><strong>Contoh Barang Ekspor Indonesia:</strong></p>
+            <ul class="list-content">
+                <li>Kelapa sawit</li>
+                <li>Karet</li>
+                <li>Kopi</li>
+                <li>Batubara</li>
+                <li>Tekstil</li>
+            </ul>
+            
+            <p><strong>Manfaat Ekspor:</strong></p>
+            <ul class="list-content">
+                <li>Menambah pendapatan negara</li>
+                <li>Membuka lapangan pekerjaan</li>
+                <li>Meningkatkan produksi dalam negeri</li>
+            </ul>
+        </div>
+
+        <!-- B. Impor -->
+        <div class="impor-box">
+            <span class="badge-title"><i class="fas fa-arrow-down"></i> B. IMPOR</span>
+            
+            <p><strong>Pengertian Impor:</strong> Impor adalah kegiatan membeli barang atau jasa dari luar negeri.</p>
+            
+            <p><strong>Tujuan Impor:</strong></p>
+            <ul class="list-content">
+                <li>Memenuhi kebutuhan dalam negeri</li>
+                <li>Mendapatkan barang yang tidak diproduksi sendiri</li>
+                <li>Mendukung kegiatan industri</li>
+            </ul>
+            
+            <p><strong>Contoh Barang Impor:</strong></p>
+            <ul class="list-content">
+                <li>Mesin industri</li>
+                <li>Kendaraan</li>
+                <li>Elektronik</li>
+                <li>Gandum</li>
+            </ul>
+            
+            <p><strong>Manfaat Impor:</strong></p>
+            <ul class="list-content">
+                <li>Memenuhi kebutuhan masyarakat</li>
+                <li>Mendapatkan teknologi modern</li>
+                <li>Menambah variasi barang</li>
+            </ul>
+        </div>
+
+        <!-- C. Faktor Pendorong -->
+        <div class="faktor-box">
+            <span class="badge-title"><i class="fas fa-cogs"></i> C. FAKTOR PENDORONG PERDAGANGAN INTERNASIONAL</span>
+            
+            <ul class="list-content">
+                <li>Perbedaan sumber daya alam</li>
+                <li>Perbedaan teknologi</li>
+                <li>Perbedaan iklim</li>
+                <li>Keinginan memperoleh keuntungan</li>
+                <li>Kemajuan transportasi dan komunikasi</li>
+            </ul>
+        </div>
+
+        <!-- D. Hambatan Perdagangan Internasional -->
+        <div class="hambatan-box">
+            <span class="badge-title"><i class="fas fa-shield-alt"></i> D. HAMBATAN PERDAGANGAN INTERNASIONAL</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Perbedaan Mata Uang:</strong> Setiap negara memiliki mata uang yang berbeda.</li>
+                <li><strong>2. Kebijakan Pemerintah:</strong> Adanya aturan impor dan ekspor.</li>
+                <li><strong>3. Perang dan Konflik:</strong> Menghambat hubungan perdagangan antarnegara.</li>
+                <li><strong>4. Biaya Transportasi:</strong> Jarak yang jauh menyebabkan biaya lebih mahal.</li>
+            </ul>
+        </div>
+
+        <!-- E. Kurs Mata Uang -->
+        <div class="kurs-box">
+            <span class="badge-title"><i class="fas fa-exchange-alt"></i> E. KURS MATA UANG</span>
+            
+            <p><strong>Pengertian Kurs:</strong> Kurs adalah nilai tukar mata uang suatu negara terhadap mata uang negara lain.</p>
+            <p><strong>Contoh:</strong> Rupiah terhadap dolar Amerika</p>
+            
+            <p><strong>Jenis Kurs:</strong></p>
+            <ul class="list-content">
+                <li><strong>1. Kurs Jual:</strong> Nilai tukar saat bank menjual mata uang asing.</li>
+                <li><strong>2. Kurs Beli:</strong> Nilai tukar saat bank membeli mata uang asing.</li>
+            </ul>
+        </div>
+
+        <!-- F. Kerja Sama Ekonomi Internasional -->
+        <div class="kerjasama-box">
+            <span class="badge-title"><i class="fas fa-handshake"></i> F. KERJA SAMA EKONOMI INTERNASIONAL</span>
+            
+            <p><strong>Pengertian:</strong> Kerja sama ekonomi internasional adalah hubungan ekonomi antara negara-negara untuk mencapai tujuan bersama.</p>
+            
+            <p><strong>Tujuan:</strong></p>
+            <ul class="list-content">
+                <li>Memperkuat ekonomi negara</li>
+                <li>Menjalin hubungan baik antarnegara</li>
+                <li>Meningkatkan kesejahteraan</li>
+            </ul>
+            
+            <p><strong>Contoh Kerja Sama Internasional:</strong></p>
+            <div class="kerjasama-grid">
+                <div class="kerjasama-card">
+                    <i class="fas fa-flag"></i>
+                    <h4>ASEAN</h4>
+                </div>
+                <div class="kerjasama-card">
+                    <i class="fas fa-globe"></i>
+                    <h4>APEC</h4>
+                </div>
+                <div class="kerjasama-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>WTO</h4>
+                </div>
+                <div class="kerjasama-card">
+                    <i class="fas fa-building"></i>
+                    <h4>IMF</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hadis Tentang Kejujuran Berdagang -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG KEJUJURAN BERDAGANG</span>
+            
+            <div class="hadis-text">
+                تَاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Pedagang yang jujur dan terpercaya akan bersama para nabi, orang-orang yang benar, dan para syuhada."</strong></p>
+                <p>(HR. Tirmidzi)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Perdagangan harus dilakukan secara jujur</li>
+                <li>Tidak boleh menipu dalam transaksi</li>
+                <li>Kejujuran membawa keberkahan</li>
+            </ul>
+        </div>
+
+        <!-- Ayat Al-Qur'an Tentang Perdagangan -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-quran"></i> AYAT AL-QUR'AN TENTANG PERDAGANGAN</span>
+            
+            <div class="hadis-text" style="font-size: 1.5rem;">
+                وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Allah telah menghalalkan jual beli dan mengharamkan riba."</strong></p>
+                <p>(QS. Al-Baqarah: 275)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Islam membolehkan perdagangan yang halal</li>
+                <li>Transaksi harus dilakukan secara adil</li>
+                <li>Riba dan kecurangan dilarang</li>
+            </ul>
+        </div>
+
+        <!-- Dampak Perdagangan Internasional -->
+        <div class="dampak-box">
+            <span class="badge-title"><i class="fas fa-chart-line"></i> DAMPAK PERDAGANGAN INTERNASIONAL</span>
+            
+            <div class="two-column">
+                <div class="col">
+                    <h4><i class="fas fa-thumbs-up" style="color: #2e7d32;"></i> Dampak Positif</h4>
+                    <ul class="list-content">
+                        <li>Barang lebih beragam</li>
+                        <li>Hubungan antarnegara semakin baik</li>
+                        <li>Teknologi berkembang</li>
+                        <li>Lapangan pekerjaan bertambah</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4><i class="fas fa-thumbs-down" style="color: #ad1457;"></i> Dampak Negatif</h4>
+                    <ul class="list-content">
+                        <li>Produk luar negeri lebih mendominasi</li>
+                        <li>Persaingan usaha semakin ketat</li>
+                        <li>Ketergantungan terhadap negara lain</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contoh Perdagangan Internasional -->
+        <div class="contoh-box">
+            <span class="badge-title"><i class="fas fa-list"></i> CONTOH PERDAGANGAN INTERNASIONAL DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Membeli smartphone dari luar negeri</li>
+                <li>Menjual kopi Indonesia ke negara lain</li>
+                <li>Menggunakan kendaraan impor</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Perdagangan internasional adalah kegiatan jual beli antarnegara yang bertujuan memenuhi kebutuhan dan memperoleh keuntungan. Kegiatan ini meliputi ekspor dan impor serta dipengaruhi berbagai faktor. Dalam Islam, perdagangan harus dilakukan secara halal, jujur, dan adil agar membawa manfaat dan keberkahan bagi semua pihak.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="11-apbn-dan-apbd.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="13-koperasi-dan-bumn.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

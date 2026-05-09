@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi | Manajemen Syariah</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Konsultasi <span class="highlight">Syariah</span></h1>
+        <p>Diskusikan permasalahan manajemen Anda dengan ahlinya</p>
+    </div>
+</section>
+
+<section class="consultation-form" style="padding: 60px 0;">
+    <div class="container">
+        <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 24px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <form id="consultForm">
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nama Lengkap</label>
+                    <input type="text" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
+                    <input type="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Topik Konsultasi</label>
+                    <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        <option>Kepemimpinan Islami</option>
+                        <option>Etika Bisnis Syariah</option>
+                        <option>Keuangan Syariah</option>
+                        <option>Manajemen SDM</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Pertanyaan</label>
+                    <textarea rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Kirim Konsultasi <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+<script src="assets/js/script.js"></script>
+<script>
+    document.getElementById('consultForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Terima kasih! Pertanyaan konsultasi Anda akan segera direspon.');
+        this.reset();
+    });
+</script>
+</body>
+</html>

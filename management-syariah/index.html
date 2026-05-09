@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar ilmu manajemen dan ekonomi syariah berbasis Al-Qur'an dan Sunnah">
+    <title>Beranda | Manajemen Syariah</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style khusus beranda */
+        .hero {
+            background: linear-gradient(135deg, #eaf5ef 0%, #ffffff 100%);
+            padding: 60px 0 40px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #0e4d32;
+        }
+        
+        .hero .tagline {
+            font-size: 1.2rem;
+            color: #c9a03d;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Kata Pengantar */
+        .foreword {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .foreword-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .foreword-title {
+            font-size: 1.8rem;
+            color: #0e4d32;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .foreword-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #c9a03d;
+        }
+        
+        .foreword-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c3e2f;
+            text-align: justify;
+            margin-top: 2rem;
+        }
+        
+        .foreword-sign {
+            margin-top: 2rem;
+            font-style: italic;
+            color: #5a6e6b;
+            text-align: right;
+        }
+        
+        /* Ilmu Ekonomi Syariah */
+        .ilmu-section {
+            background: #fefcf8;
+            padding: 60px 0;
+        }
+        
+        .ilmu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .section-badge {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .section-badge span {
+            background: #eaf5ef;
+            color: #1a6e4b;
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .ilmu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .ilmu-card {
+            background: white;
+            border-radius: 20px;
+            padding: 1.8rem;
+            border: 1px solid #e8e2d8;
+            transition: all 0.3s;
+        }
+        
+        .ilmu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+            border-color: #c9a03d;
+        }
+        
+        .ilmu-card h3 {
+            color: #1a6e4b;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .ilmu-card h3 i {
+            color: #c9a03d;
+            margin-right: 10px;
+        }
+        
+        .ilmu-card p {
+            color: #5a6e6b;
+            line-height: 1.6;
+        }
+        
+        /* Prinsip Dasar */
+        .prinsip-section {
+            background: white;
+            padding: 60px 0;
+        }
+        
+        .prinsip-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .prinsip-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .prinsip-icon {
+            width: 70px;
+            height: 70px;
+            background: #eaf5ef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .prinsip-icon i {
+            font-size: 2rem;
+            color: #1a6e4b;
+        }
+        
+        .prinsip-item h4 {
+            color: #0e4d32;
+            margin-bottom: 0.5rem;
+        }
+        
+        .prinsip-item p {
+            color: #5a6e6b;
+            font-size: 0.9rem;
+        }
+        
+        /* Dalil Box */
+        .dalil-box {
+            background: linear-gradient(135deg, #fef5e6, #fff8f0);
+            border-radius: 24px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-right: 4px solid #c9a03d;
+        }
+        
+        .dalil-box .arabic {
+            font-family: 'Amiri', 'Traditional Arabic', serif;
+            font-size: 1.5rem;
+            color: #1a6e4b;
+            margin-bottom: 0.5rem;
+            direction: rtl;
+        }
+        
+        .dalil-box p {
+            color: #5a6e6b;
+            font-style: italic;
+        }
+        
+        /* CTA Sederhana */
+        .cta-simple {
+            text-align: center;
+            padding: 50px 0;
+            background: #1a2c2e;
+            color: white;
+        }
+        
+        .cta-simple h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-simple .btn-cta {
+            display: inline-block;
+            background: #c9a03d;
+            color: #1a2c2e;
+            padding: 12px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-simple .btn-cta:hover {
+            background: #b38f2e;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .ilmu-grid {
+                grid-template-columns: 1fr;
+            }
+            .prinsip-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .foreword-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<!-- ==================== HERO SECTION SEDERHANA ==================== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="tagline">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <h1>Manajemen <span style="color: #c9a03d;">& Ekonomi Syariah</span></h1>
+            <p style="color: #5a6e6b; max-width: 600px; margin: 0 auto;">Membangun peradaban bisnis yang berkah, adil, dan berkelanjutan</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== KATA PENGANTAR ==================== -->
+<section class="foreword">
+    <div class="container">
+        <div class="foreword-container">
+            <h2 class="foreword-title">Kata Pengantar</h2>
+            <div class="foreword-text">
+                <p>Assalamu'alaikum warahmatullahi wabarakatuh,</p>
+                <p style="margin-top: 1rem;">Puji syukur ke hadirat Allah Subhanahu wa Ta'ala, Tuhan semesta alam, yang telah melimpahkan rahmat dan hidayah-Nya sehingga platform <strong>Manajemen Syariah</strong> ini dapat hadir untuk memberikan manfaat bagi umat.</p>
+                <p style="margin-top: 1rem;">Ilmu manajemen dan ekonomi syariah bukan sekadar teori tentang bagaimana mengelola sumber daya secara efisien. Lebih dari itu, ia adalah <strong>cara hidup (way of life)</strong> yang mengintegrasikan nilai-nilai Ilahiah dalam setiap aktivitas ekonomi. Dari konsep tauhid sebagai fondasi, keadilan sebagai pilar, hingga ihsan sebagai ruh profesionalisme — semuanya bertujuan untuk mencapai <strong>falah</strong> (kebahagiaan dunia dan akhirat).</p>
+                <p style="margin-top: 1rem;">Website ini kami dedikasikan untuk para pelajar, akademisi, praktisi bisnis, dan siapa pun yang ingin mendalami manajemen syariah secara sistematis. Semoga menjadi pintu keberkahan dan ilmu yang bermanfaat.</p>
+                <p style="margin-top: 1rem;">Wassalamu'alaikum warahmatullahi wabarakatuh.</p>
+            </div>
+            <div class="foreword-sign">
+                — Tim Manajemen Syariah
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ILMU EKONOMI SYARIAH ==================== -->
+<section class="ilmu-section">
+    <div class="container">
+        <div class="ilmu-container">
+            <div class="section-badge">
+                <span><i class="fas fa-graduation-cap"></i> Apa Itu Manajemen Syariah?</span>
+            </div>
+            
+            <div class="ilmu-grid">
+                <div class="ilmu-card">
+                    <h3><i class="fas fa-compass"></i> Pengertian</h3>
+                    <p>Manajemen Syariah adalah suatu proses pengelolaan sumber daya (manusia, keuangan, material, dan informasi) yang dilandasi oleh nilai-nilai dan hukum Islam (syariah). Tujuannya tidak hanya mencari keuntungan material, tetapi juga <strong>ridha Allah</strong> dan kemaslahatan umat.</p>
+                </div>
+                <div class="ilmu-card">
+                    <h3><i class="fas fa-bullseye"></i> Tujuan</h3>
+                    <p>Mewujudkan <strong>falah</strong> (kemenangan) di dunia dan akhirat melalui kegiatan ekonomi yang adil, transparan, dan bebas dari unsur riba, gharar (ketidakpastian), serta maysir (perjudian). Juga menciptakan tatanan sosial yang sejahtera.</p>
+                </div>
+                <div class="ilmu-card">
+                    <h3><i class="fas fa-scroll"></i> Sumber Hukum</h3>
+                    <p>Al-Qur'an, As-Sunnah, Ijma' (konsensus ulama), dan Qiyas (analogi). Fatwa DSN-MUI juga menjadi rujukan penting untuk implementasi di lembaga keuangan syariah.</p>
+                </div>
+                <div class="ilmu-card">
+                    <h3><i class="fas fa-chart-pie"></i> Ruang Lingkup</h3>
+                    <p>Meliputi manajemen keuangan syariah, manajemen SDI (Sumber Daya Insani), etika bisnis, kepemimpinan Islami, manajemen zakat dan wakaf, serta tata kelola syariah (good governance).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRINSIP DASAR MANAJEMEN SYARIAH ==================== -->
+<section class="prinsip-section">
+    <div class="container">
+        <div class="section-badge">
+            <span><i class="fas fa-gem"></i> Prinsip Dasar</span>
+        </div>
+        <div class="prinsip-grid">
+            <div class="prinsip-item">
+                <div class="prinsip-icon">
+                    <i class="fas fa-star-of-life"></i>
+                </div>
+                <h4>Tauhid</h4>
+                <p>Meyakini Allah sebagai satu-satunya pemilik mutlak. Segala aktivitas manajerial adalah ibadah.</p>
+            </div>
+            <div class="prinsip-item">
+                <div class="prinsip-icon">
+                    <i class="fas fa-scale-balanced"></i>
+                </div>
+                <h4>Keadilan ('Adl)</h4>
+                <p>Memberikan hak kepada pemiliknya, tidak mendiskriminasi, serta adil dalam upah dan kebijakan.</p>
+            </div>
+            <div class="prinsip-item">
+                <div class="prinsip-icon">
+                    <i class="fas fa-hand-sparkles"></i>
+                </div>
+                <h4>Ihsan & Profesionalisme</h4>
+                <p>Bekerja dengan kualitas terbaik, seakan-akan melihat Allah. Itqan (profesional) adalah amanah.</p>
+            </div>
+        </div>
+        
+        <!-- Dalil Box -->
+        <div class="dalil-box">
+            <div class="arabic">إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا</div>
+            <p><strong>QS. An-Nisa (4): 58</strong> — "Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya..."</p>
+            <p style="margin-top: 0.5rem;"><i class="fas fa-hadith"></i> Hadis: "Sesungguhnya Allah mencintai seseorang yang apabila bekerja, ia melakukannya dengan itqan (profesional)." (HR. Thabrani)</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CTA SEDERHANA KE MATERI ==================== -->
+<section class="cta-simple">
+    <div class="container">
+        <h3><i class="fas fa-book-open"></i> Siap Mendalami Ilmu Manajemen Syariah?</h3>
+        <p>Pelajari lebih lanjut melalui materi-materi yang telah kami siapkan</p>
+        <a href="materi/" class="btn-cta">Lihat Materi Pembelajaran →</a>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

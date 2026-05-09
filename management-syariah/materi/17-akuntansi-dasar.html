@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akuntansi Dasar | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .fungsi-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .istilah-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .persamaan-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .jurnal-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .buku-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .neraca-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+        .laporan-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .manfaat-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .contoh-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+
+        .badge-title { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .fungsi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .fungsi-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .fungsi-card i { font-size: 1.8rem; color: #1a6e4b; margin-bottom: 0.5rem; display: block; }
+        .fungsi-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .istilah-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .istilah-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .istilah-card i { font-size: 1.8rem; color: #c9a03d; margin-bottom: 0.5rem; display: block; }
+        .istilah-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .rumus-box { background: #1a6e4b; color: white; border-radius: 16px; padding: 1rem; text-align: center; margin: 1rem 0; }
+        .rumus-box p { margin: 0; font-size: 1.1rem; }
+        .rumus-box .rumus { font-family: monospace; font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem; }
+
+        .laporan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .laporan-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .laporan-card i { font-size: 1.8rem; color: #1a6e4b; margin-bottom: 0.5rem; display: block; }
+        .laporan-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 17: <span class="highlight">Akuntansi Dasar</span></h1>
+        <p>Memahami dasar-dasar akuntansi, pencatatan, dan laporan keuangan</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-calculator"></i> Akuntansi Dasar dalam Ekonomi</h1>
+
+        <!-- Pengertian Akuntansi -->
+        <div class="pengertian-box">
+            <span class="badge-title"><i class="fas fa-info-circle"></i> PENGERTIAN AKUNTANSI</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Akuntansi:</strong> Akuntansi adalah proses mencatat, mengelompokkan, mengolah, dan menyajikan data keuangan agar mudah dipahami dan digunakan untuk mengambil keputusan.</p>
+            </div>
+            
+            <p><strong>Tujuan Akuntansi:</strong></p>
+            <ul class="list-content">
+                <li>Mengetahui kondisi keuangan</li>
+                <li>Mengontrol pemasukan dan pengeluaran</li>
+                <li>Membantu pengambilan keputusan</li>
+                <li>Mengetahui keuntungan dan kerugian</li>
+            </ul>
+        </div>
+
+        <!-- A. Fungsi Akuntansi -->
+        <div class="fungsi-box">
+            <span class="badge-title"><i class="fas fa-cogs"></i> A. FUNGSI AKUNTANSI</span>
+            
+            <div class="fungsi-grid">
+                <div class="fungsi-card">
+                    <i class="fas fa-pen"></i>
+                    <h4>Fungsi Pencatatan</h4>
+                    <p>Mencatat seluruh transaksi keuangan</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Fungsi Informasi</h4>
+                    <p>Memberikan informasi keuangan kepada pemilik usaha</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-sliders-h"></i>
+                    <h4>Fungsi Pengendalian</h4>
+                    <p>Mengontrol penggunaan uang agar tidak berlebihan</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>Fungsi Pertanggungjawaban</h4>
+                    <p>Sebagai bukti laporan keuangan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- B. Istilah-Istilah dalam Akuntansi -->
+        <div class="istilah-box">
+            <span class="badge-title"><i class="fas fa-tags"></i> B. ISTILAH-ISTILAH DALAM AKUNTANSI</span>
+            
+            <div class="istilah-grid">
+                <div class="istilah-card">
+                    <i class="fas fa-box"></i>
+                    <h4>Harta (Aset)</h4>
+                    <p>Segala kekayaan yang dimiliki</p>
+                    <small>Contoh: Uang, Kendaraan, Gedung</small>
+                </div>
+                <div class="istilah-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Utang (Liabilitas)</h4>
+                    <p>Kewajiban yang harus dibayar</p>
+                    <small>Contoh: Pinjaman bank</small>
+                </div>
+                <div class="istilah-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Modal</h4>
+                    <p>Hak pemilik atas usaha</p>
+                </div>
+                <div class="istilah-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h4>Pendapatan</h4>
+                    <p>Uang yang diperoleh dari hasil usaha</p>
+                </div>
+                <div class="istilah-card">
+                    <i class="fas fa-receipt"></i>
+                    <h4>Beban</h4>
+                    <p>Biaya yang dikeluarkan dalam usaha</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- C. Persamaan Dasar Akuntansi -->
+        <div class="persamaan-box">
+            <span class="badge-title"><i class="fas fa-chart-line"></i> C. PERSAMAAN DASAR AKUNTANSI</span>
+            
+            <div class="rumus-box">
+                <p><strong>Rumus:</strong></p>
+                <p class="rumus">Harta = Utang + Modal</p>
+            </div>
+            <p><strong>Penjelasan:</strong> Semua kekayaan usaha berasal dari modal dan utang.</p>
+            <div class="definition-box">
+                <p><strong>Contoh:</strong> Jika usaha memiliki harta Rp10.000.000 dan utang Rp4.000.000, maka modalnya Rp6.000.000.</p>
+            </div>
+        </div>
+
+        <!-- D. Jurnal Umum -->
+        <div class="jurnal-box">
+            <span class="badge-title"><i class="fas fa-book"></i> D. JURNAL UMUM</span>
+            
+            <p><strong>Pengertian:</strong> Jurnal umum adalah tempat mencatat transaksi keuangan secara kronologis.</p>
+            <p><strong>Contoh:</strong> Pembelian barang, Penjualan barang, Pembayaran listrik</p>
+            <p><strong>Fungsi:</strong> Memudahkan pencatatan transaksi, Menjadi dasar laporan keuangan</p>
+        </div>
+
+        <!-- E. Buku Besar -->
+        <div class="buku-box">
+            <span class="badge-title"><i class="fas fa-database"></i> E. BUKU BESAR</span>
+            
+            <p><strong>Pengertian:</strong> Buku besar adalah kumpulan akun yang digunakan untuk mencatat transaksi dari jurnal umum.</p>
+            <p><strong>Fungsi:</strong> Mengetahui saldo setiap akun, Mempermudah penyusunan laporan keuangan</p>
+        </div>
+
+        <!-- F. Neraca Saldo -->
+        <div class="neraca-box">
+            <span class="badge-title"><i class="fas fa-balance-scale"></i> F. NERACA SALDO</span>
+            
+            <p><strong>Pengertian:</strong> Neraca saldo adalah daftar saldo seluruh akun dalam buku besar.</p>
+            <p><strong>Tujuan:</strong> Memastikan pencatatan seimbang, Mempermudah penyusunan laporan</p>
+        </div>
+
+        <!-- G. Laporan Keuangan -->
+        <div class="laporan-box">
+            <span class="badge-title"><i class="fas fa-chart-pie"></i> G. LAPORAN KEUANGAN</span>
+            
+            <p><strong>Pengertian:</strong> Laporan keuangan adalah laporan yang menunjukkan kondisi keuangan suatu usaha.</p>
+            
+            <p><strong>Jenis-Jenis Laporan Keuangan:</strong></p>
+            <div class="laporan-grid">
+                <div class="laporan-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Laporan Laba Rugi</h4>
+                    <p>Menunjukkan keuntungan atau kerugian usaha</p>
+                </div>
+                <div class="laporan-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Neraca</h4>
+                    <p>Menunjukkan posisi harta, utang, dan modal</p>
+                </div>
+                <div class="laporan-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h4>Laporan Perubahan Modal</h4>
+                    <p>Menunjukkan perubahan modal usaha</p>
+                </div>
+                <div class="laporan-card">
+                    <i class="fas fa-wallet"></i>
+                    <h4>Laporan Arus Kas</h4>
+                    <p>Menunjukkan pemasukan dan pengeluaran uang</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- H. Manfaat Akuntansi -->
+        <div class="manfaat-box">
+            <span class="badge-title"><i class="fas fa-thumbs-up"></i> H. MANFAAT AKUNTANSI</span>
+            
+            <ul class="list-content">
+                <li>Mengetahui keuntungan usaha</li>
+                <li>Mengontrol keuangan</li>
+                <li>Menghindari kerugian</li>
+                <li>Membantu perencanaan usaha</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Kejujuran -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG KEJUJURAN</span>
+            
+            <div class="hadis-text">
+                تَاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Pedagang yang jujur dan terpercaya akan bersama para nabi, orang-orang yang benar, dan para syuhada."</strong></p>
+                <p>(HR. Tirmidzi)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Pencatatan keuangan harus dilakukan dengan jujur</li>
+                <li>Tidak boleh memalsukan laporan keuangan</li>
+            </ul>
+        </div>
+
+        <!-- Ayat Al-Qur'an Tentang Pencatatan -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-quran"></i> AYAT AL-QUR'AN TENTANG PENCATATAN</span>
+            
+            <div class="hadis-text" style="font-size: 1.3rem;">
+                يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنْتُمْ بِدَيْنٍ إِلَىٰ أَجَلٍ مُسَمًّى فَاكْتُبُوهُ
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Wahai orang-orang yang beriman! Apabila kamu melakukan utang piutang untuk waktu yang ditentukan, hendaklah kamu menuliskannya."</strong></p>
+                <p>(QS. Al-Baqarah: 282)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Islam mengajarkan pentingnya pencatatan transaksi</li>
+                <li>Pencatatan membantu menghindari perselisihan</li>
+            </ul>
+        </div>
+
+        <!-- Contoh Akuntansi -->
+        <div class="contoh-box">
+            <span class="badge-title"><i class="fas fa-list"></i> CONTOH AKUNTANSI DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Mencatat uang jajan</li>
+                <li>Membuat laporan penjualan toko</li>
+                <li>Menghitung pemasukan dan pengeluaran usaha</li>
+                <li>Menyimpan bukti pembayaran</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Akuntansi adalah proses pencatatan dan pengelolaan keuangan untuk mengetahui kondisi keuangan suatu usaha. Akuntansi sangat penting dalam kegiatan ekonomi agar keuangan dapat dikelola dengan baik. Dalam Islam, pencatatan transaksi dan kejujuran sangat dianjurkan agar tercipta keadilan dan kepercayaan.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="16-ekonomi-digital.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="18-manajemen.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

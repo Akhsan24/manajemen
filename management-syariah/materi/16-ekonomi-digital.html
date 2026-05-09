@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekonomi Digital | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .ciri-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .bentuk-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .manfaat-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .dampak-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .bijak-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .contoh-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+
+        .badge-title { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .bentuk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .bentuk-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .bentuk-card i { font-size: 2rem; color: #1a6e4b; margin-bottom: 0.5rem; display: block; }
+        .bentuk-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .col { background: #f9f9f9; border-radius: 16px; padding: 1rem; }
+        .col h4 { color: #1a6e4b; margin-bottom: 0.8rem; text-align: center; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } .two-column { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 16: <span class="highlight">Ekonomi Digital</span></h1>
+        <p>Memahami e-commerce, fintech, marketplace, dan bisnis online</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-laptop-code"></i> Ekonomi Digital</h1>
+
+        <!-- Pengertian Ekonomi Digital -->
+        <div class="pengertian-box">
+            <span class="badge-title"><i class="fas fa-info-circle"></i> PENGERTIAN EKONOMI DIGITAL</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Ekonomi Digital:</strong> Ekonomi digital adalah kegiatan ekonomi yang memanfaatkan teknologi digital dan internet dalam proses transaksi, pemasaran, pembayaran, dan pelayanan.</p>
+            </div>
+            
+            <p><strong>Tujuan Ekonomi Digital:</strong></p>
+            <ul class="list-content">
+                <li>Mempermudah transaksi</li>
+                <li>Mempercepat penyebaran informasi</li>
+                <li>Menghemat waktu dan biaya</li>
+                <li>Memperluas peluang usaha</li>
+            </ul>
+        </div>
+
+        <!-- A. Ciri-Ciri Ekonomi Digital -->
+        <div class="ciri-box">
+            <span class="badge-title"><i class="fas fa-tags"></i> A. CIRI-CIRI EKONOMI DIGITAL</span>
+            
+            <ul class="list-content">
+                <li>Menggunakan internet dan teknologi</li>
+                <li>Transaksi dilakukan secara online</li>
+                <li>Pembayaran menggunakan sistem digital</li>
+                <li>Informasi dapat diakses dengan cepat</li>
+                <li>Jangkauan pasar lebih luas</li>
+            </ul>
+        </div>
+
+        <!-- B. Bentuk-Bentuk Ekonomi Digital -->
+        <div class="bentuk-box">
+            <span class="badge-title"><i class="fas fa-th-large"></i> B. BENTUK-BENTUK EKONOMI DIGITAL</span>
+            
+            <div class="bentuk-grid">
+                <div class="bentuk-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h4>1. E-Commerce</h4>
+                    <p>Jual beli barang/jasa melalui internet</p>
+                    <small>Contoh: Toko online, Marketplace</small>
+                </div>
+                <div class="bentuk-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>2. Fintech</h4>
+                    <p>Teknologi dalam layanan keuangan digital</p>
+                    <small>Contoh: Mobile banking, Pembayaran digital</small>
+                </div>
+                <div class="bentuk-card">
+                    <i class="fas fa-wallet"></i>
+                    <h4>3. Dompet Digital</h4>
+                    <p>Aplikasi penyimpanan uang elektronik</p>
+                    <small>Contoh: DANA, OVO, GoPay, ShopeePay</small>
+                </div>
+                <div class="bentuk-card">
+                    <i class="fas fa-store"></i>
+                    <h4>4. Marketplace</h4>
+                    <p>Platform online mempertemukan penjual dan pembeli</p>
+                    <small>Contoh: Tokopedia, Shopee, Lazada</small>
+                </div>
+                <div class="bentuk-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>5. Bisnis Online</h4>
+                    <p>Usaha yang dijalankan melalui internet</p>
+                    <small>Contoh: Jualan di media sosial, Affiliate marketing</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- C. Manfaat Ekonomi Digital -->
+        <div class="manfaat-box">
+            <span class="badge-title"><i class="fas fa-thumbs-up"></i> C. MANFAAT EKONOMI DIGITAL</span>
+            
+            <ul class="list-content">
+                <li>Mempermudah kegiatan ekonomi</li>
+                <li>Membuka peluang usaha baru</li>
+                <li>Menambah lapangan pekerjaan</li>
+                <li>Mempercepat transaksi</li>
+                <li>Memudahkan promosi produk</li>
+            </ul>
+        </div>
+
+        <!-- D. Dampak Positif Ekonomi Digital -->
+        <div class="dampak-box">
+            <span class="badge-title"><i class="fas fa-thumbs-up"></i> D. DAMPAK POSITIF EKONOMI DIGITAL</span>
+            
+            <ul class="list-content">
+                <li>Transaksi lebih cepat</li>
+                <li>Praktis dan efisien</li>
+                <li>Jangkauan pasar luas</li>
+                <li>Memudahkan komunikasi bisnis</li>
+            </ul>
+        </div>
+
+        <!-- E. Dampak Negatif Ekonomi Digital -->
+        <div class="dampak-box">
+            <span class="badge-title"><i class="fas fa-thumbs-down"></i> E. DAMPAK NEGATIF EKONOMI DIGITAL</span>
+            
+            <ul class="list-content">
+                <li>Penipuan online</li>
+                <li>Kecanduan belanja online</li>
+                <li>Persaingan usaha semakin ketat</li>
+                <li>Penyalahgunaan data pribadi</li>
+            </ul>
+        </div>
+
+        <!-- F. Cara Menggunakan Ekonomi Digital dengan Bijak -->
+        <div class="bijak-box">
+            <span class="badge-title"><i class="fas fa-lightbulb"></i> F. CARA MENGGUNAKAN EKONOMI DIGITAL DENGAN BIJAK</span>
+            
+            <ul class="list-content">
+                <li>Berbelanja sesuai kebutuhan</li>
+                <li>Memastikan toko online terpercaya</li>
+                <li>Menjaga keamanan akun dan password</li>
+                <li>Menggunakan internet secara positif</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Kejujuran dalam Berdagang -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG KEJUJURAN DALAM BERDAGANG</span>
+            
+            <div class="hadis-text">
+                تَاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Pedagang yang jujur dan terpercaya akan bersama para nabi, orang-orang yang benar, dan para syuhada."</strong></p>
+                <p>(HR. Tirmidzi)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Jual beli online harus dilakukan dengan jujur</li>
+                <li>Tidak boleh menipu pembeli</li>
+                <li>Penjual harus memberikan informasi yang benar</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Amanah -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG AMANAH</span>
+            
+            <div class="hadis-text">
+                أَدِّ الأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Tunaikanlah amanah kepada orang yang mempercayaimu."</strong></p>
+                <p>(HR. Abu Dawud)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Penjual online harus menjaga kepercayaan pembeli</li>
+                <li>Barang yang dijual harus sesuai dengan deskripsi</li>
+            </ul>
+        </div>
+
+        <!-- Ayat Al-Qur'an Tentang Larangan Curang -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-quran"></i> AYAT AL-QUR'AN TENTANG LARANGAN CURANG</span>
+            
+            <div class="hadis-text" style="font-size: 1.5rem;">
+                وَيْلٌ لِلْمُطَفِّفِينَ
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Celakalah bagi orang-orang yang curang dalam takaran dan timbangan."</strong></p>
+                <p>(QS. Al-Mutaffifin: 1)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Islam melarang penipuan dalam perdagangan</li>
+                <li>Semua transaksi harus dilakukan secara jujur</li>
+            </ul>
+        </div>
+
+        <!-- Contoh Ekonomi Digital -->
+        <div class="contoh-box">
+            <span class="badge-title"><i class="fas fa-list"></i> CONTOH EKONOMI DIGITAL DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Membeli makanan melalui aplikasi online</li>
+                <li>Membayar tagihan menggunakan mobile banking</li>
+                <li>Berjualan melalui marketplace</li>
+                <li>Membayar dengan QRIS atau dompet digital</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Ekonomi digital adalah kegiatan ekonomi yang menggunakan teknologi digital dan internet untuk mempermudah transaksi dan kegiatan usaha. Ekonomi digital memberikan banyak manfaat, namun harus digunakan secara bijak dan jujur. Dalam Islam, kegiatan ekonomi digital tetap harus dilakukan dengan amanah, adil, dan tanpa penipuan.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="15-ekonomi-syariah.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="17-akuntansi-dasar.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

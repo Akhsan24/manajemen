@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflasi dan Pengangguran | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .penyebab-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .jenis-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .dampak-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .solusi-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .contoh-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+
+        .badge-inflasi { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-pengangguran { background: #1565c0; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .inflasi-level { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+        .level-card { flex: 1; min-width: 150px; background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .level-card h4 { margin-bottom: 0.5rem; }
+        .level-card i { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+
+        .level-ringan i { color: #2e7d32; }
+        .level-sedang i { color: #e65100; }
+        .level-berat i { color: #ad1457; }
+        .level-hiper i { color: #d32f2f; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .col { background: #f9f9f9; border-radius: 16px; padding: 1rem; }
+        .col h4 { color: #1a6e4b; margin-bottom: 0.8rem; text-align: center; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } .two-column { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 9: <span class="highlight">Inflasi dan Pengangguran</span></h1>
+        <p>Memahami pengertian, penyebab, jenis, dan cara mengatasi inflasi serta pengangguran</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-chart-line"></i> Inflasi dan Pengangguran</h1>
+
+        <!-- Pengertian Inflasi -->
+        <div class="pengertian-box">
+            <span class="badge-inflasi"><i class="fas fa-chart-line"></i> PENGERTIAN INFLASI</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Inflasi:</strong> Inflasi adalah keadaan ketika harga barang dan jasa mengalami kenaikan secara terus-menerus dalam jangka waktu tertentu.</p>
+            </div>
+            
+            <p><strong>Akibat Inflasi:</strong></p>
+            <ul class="list-content">
+                <li>Harga barang menjadi mahal</li>
+                <li>Nilai uang menurun</li>
+                <li>Daya beli masyarakat berkurang</li>
+                <li>Kehidupan masyarakat menjadi lebih sulit</li>
+            </ul>
+        </div>
+
+        <!-- A. Penyebab Inflasi -->
+        <div class="penyebab-box">
+            <span class="badge-inflasi"><i class="fas fa-cogs"></i> A. PENYEBAB INFLASI</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Permintaan Masyarakat Tinggi:</strong> Jumlah barang yang diminta lebih banyak daripada jumlah barang yang tersedia. <br>Contoh: Menjelang hari raya harga kebutuhan naik karena permintaan meningkat.</li>
+                <li><strong>2. Biaya Produksi Naik:</strong> Kenaikan biaya produksi menyebabkan harga barang ikut naik. <br>Contoh: Harga bahan bakar naik sehingga ongkos produksi bertambah.</li>
+                <li><strong>3. Jumlah Uang Beredar Terlalu Banyak:</strong> Uang yang beredar di masyarakat terlalu banyak sehingga harga barang meningkat.</li>
+                <li><strong>4. Barang Impor Mahal:</strong> Kenaikan harga barang dari luar negeri dapat menyebabkan inflasi.</li>
+            </ul>
+        </div>
+
+        <!-- B. Jenis-Jenis Inflasi -->
+        <div class="jenis-box">
+            <span class="badge-inflasi"><i class="fas fa-tags"></i> B. JENIS-JENIS INFLASI</span>
+            
+            <div class="inflasi-level">
+                <div class="level-card level-ringan">
+                    <i class="fas fa-smile"></i>
+                    <h4>Inflasi Ringan</h4>
+                    <p>Kenaikan harga masih rendah dan belum mengganggu ekonomi.</p>
+                </div>
+                <div class="level-card level-sedang">
+                    <i class="fas fa-meh"></i>
+                    <h4>Inflasi Sedang</h4>
+                    <p>Kenaikan harga mulai memengaruhi kegiatan ekonomi.</p>
+                </div>
+                <div class="level-card level-berat">
+                    <i class="fas fa-frown"></i>
+                    <h4>Inflasi Berat</h4>
+                    <p>Harga barang naik tinggi sehingga masyarakat kesulitan membeli kebutuhan.</p>
+                </div>
+                <div class="level-card level-hiper">
+                    <i class="fas fa-skull"></i>
+                    <h4>Hiperinflasi</h4>
+                    <p>Kenaikan harga sangat tinggi dan tidak terkendali.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- C. Dampak Inflasi -->
+        <div class="dampak-box">
+            <span class="badge-inflasi"><i class="fas fa-exclamation-triangle"></i> C. DAMPAK INFLASI</span>
+            
+            <div class="two-column">
+                <div class="col">
+                    <h4><i class="fas fa-thumbs-up" style="color: #2e7d32;"></i> Dampak Positif</h4>
+                    <ul class="list-content">
+                        <li>Mendorong masyarakat lebih giat bekerja</li>
+                        <li>Meningkatkan produksi barang</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4><i class="fas fa-thumbs-down" style="color: #ad1457;"></i> Dampak Negatif</h4>
+                    <ul class="list-content">
+                        <li>Harga kebutuhan naik</li>
+                        <li>Tabungan berkurang nilainya</li>
+                        <li>Masyarakat berpenghasilan tetap dirugikan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- D. Cara Mengatasi Inflasi -->
+        <div class="solusi-box">
+            <span class="badge-inflasi"><i class="fas fa-tools"></i> D. CARA MENGATASI INFLASI</span>
+            
+            <ul class="list-content">
+                <li>Mengurangi jumlah uang beredar</li>
+                <li>Meningkatkan produksi barang</li>
+                <li>Menghemat pengeluaran</li>
+                <li>Mengatur kebijakan ekonomi oleh pemerintah</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Sikap Hemat -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG SIKAP HEMAT</span>
+            
+            <div class="hadis-text">
+                كُلُوا وَاشْرَبُوا وَتَصَدَّقُوا وَالْبَسُوا فِي غَيْرِ إِسْرَافٍ وَلاَ مَخِيلَةٍ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Makanlah, minumlah, bersedekahlah, dan berpakaianlah tanpa berlebihan dan tanpa kesombongan."</strong></p>
+                <p>(HR. Bukhari)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Islam mengajarkan hidup sederhana</li>
+                <li>Tidak boleh boros dalam menggunakan harta</li>
+                <li>Sikap hemat membantu menghadapi kenaikan harga</li>
+            </ul>
+        </div>
+
+        <!-- Pengertian Pengangguran -->
+        <div class="pengertian-box">
+            <span class="badge-pengangguran"><i class="fas fa-user-slash"></i> PENGERTIAN PENGANGGURAN</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Pengangguran:</strong> Pengangguran adalah keadaan seseorang yang tidak memiliki pekerjaan meskipun mampu dan ingin bekerja.</p>
+            </div>
+        </div>
+
+        <!-- E. Jenis-Jenis Pengangguran -->
+        <div class="penyebab-box">
+            <span class="badge-pengangguran"><i class="fas fa-list"></i> E. JENIS-JENIS PENGANGGURAN</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Pengangguran Terbuka:</strong> Seseorang yang tidak memiliki pekerjaan sama sekali.</li>
+                <li><strong>2. Pengangguran Musiman:</strong> Pengangguran yang terjadi pada waktu tertentu. <br>Contoh: Petani setelah musim panen selesai</li>
+                <li><strong>3. Pengangguran Setengah Menganggur:</strong> Seseorang bekerja tetapi waktunya tidak penuh.</li>
+                <li><strong>4. Pengangguran Teknologi:</strong> Pengangguran akibat penggunaan mesin modern.</li>
+            </ul>
+        </div>
+
+        <!-- F. Penyebab Pengangguran -->
+        <div class="jenis-box">
+            <span class="badge-pengangguran"><i class="fas fa-cogs"></i> F. PENYEBAB PENGANGGURAN</span>
+            
+            <ul class="list-content">
+                <li>Kurangnya lapangan pekerjaan</li>
+                <li>Rendahnya pendidikan dan keterampilan</li>
+                <li>Kemajuan teknologi</li>
+                <li>Banyaknya jumlah pencari kerja</li>
+            </ul>
+        </div>
+
+        <!-- G. Dampak Pengangguran -->
+        <div class="dampak-box">
+            <span class="badge-pengangguran"><i class="fas fa-exclamation-triangle"></i> G. DAMPAK PENGANGGURAN</span>
+            
+            <ul class="list-content">
+                <li>Kemiskinan meningkat</li>
+                <li>Kriminalitas bertambah</li>
+                <li>Pendapatan masyarakat menurun</li>
+                <li>Kesejahteraan masyarakat berkurang</li>
+            </ul>
+        </div>
+
+        <!-- H. Cara Mengatasi Pengangguran -->
+        <div class="solusi-box">
+            <span class="badge-pengangguran"><i class="fas fa-tools"></i> H. CARA MENGATASI PENGANGGURAN</span>
+            
+            <ul class="list-content">
+                <li>Membuka lapangan pekerjaan baru</li>
+                <li>Meningkatkan keterampilan kerja</li>
+                <li>Mengembangkan usaha kecil</li>
+                <li>Memberikan pelatihan kerja</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Bekerja Keras -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG BEKERJA KERAS</span>
+            
+            <div class="hadis-text">
+                لَأَنْ يَحْتَطِبَ أَحَدُكُمْ حُزْمَةً عَلَى ظَهْرِهِ خَيْرٌ مِنْ أَنْ يَسْأَلَ النَّاسَ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Seseorang yang mencari kayu bakar lalu memikulnya di atas punggungnya lebih baik daripada meminta-minta kepada orang lain."</strong></p>
+                <p>(HR. Bukhari dan Muslim)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Islam mengajarkan untuk bekerja keras</li>
+                <li>Setiap orang dianjurkan mencari nafkah sendiri</li>
+                <li>Meminta-minta tanpa usaha tidak dianjurkan</li>
+            </ul>
+        </div>
+
+        <!-- Contoh Inflasi dan Pengangguran -->
+        <div class="contoh-box">
+            <span class="badge-inflasi"><i class="fas fa-list"></i> CONTOH INFLASI DALAM KEHIDUPAN SEHARI-HARI</span>
+            <ul class="list-content">
+                <li>Harga beras naik menjelang hari raya</li>
+                <li>Ongkos transportasi meningkat karena harga bahan bakar naik</li>
+            </ul>
+            
+            <span class="badge-pengangguran" style="margin-top: 1rem;"><i class="fas fa-list"></i> CONTOH PENGANGGURAN DALAM KEHIDUPAN SEHARI-HARI</span>
+            <ul class="list-content">
+                <li>Lulusan sekolah belum mendapatkan pekerjaan</li>
+                <li>Buruh kehilangan pekerjaan karena pabrik menggunakan mesin otomatis</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Inflasi adalah kenaikan harga barang secara terus-menerus yang dapat memengaruhi kehidupan masyarakat. Pengangguran adalah keadaan seseorang tidak memiliki pekerjaan. Untuk mengatasi inflasi dan pengangguran diperlukan kerja sama antara pemerintah dan masyarakat. Islam mengajarkan hidup hemat, bekerja keras, dan tidak bermalas-malasan dalam mencari rezeki.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="08-uang-dan-lembaga-keuangan.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="10-pendapatan-nasional.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

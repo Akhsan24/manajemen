@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koperasi dan BUMN | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .koperasi-ciri-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .koperasi-prinsip-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .jenis-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .manfaat-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .bumn-pengertian-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .bumn-ciri-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+        .bumn-jenis-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .peran-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .perbedaan-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .contoh-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+
+        .badge-title { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .col { background: #f9f9f9; border-radius: 16px; padding: 1rem; }
+        .col h4 { color: #1a6e4b; margin-bottom: 0.8rem; text-align: center; }
+
+        .jenis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .jenis-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .jenis-card i { font-size: 1.8rem; color: #1a6e4b; margin-bottom: 0.5rem; display: block; }
+        .jenis-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } .two-column { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 13: <span class="highlight">Koperasi dan BUMN</span></h1>
+        <p>Memahami pengertian, jenis, dan peran koperasi serta BUMN dalam perekonomian</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-handshake"></i> Koperasi dan BUMN</h1>
+
+        <!-- Pengertian Koperasi -->
+        <div class="pengertian-box">
+            <span class="badge-title"><i class="fas fa-info-circle"></i> PENGERTIAN KOPERASI</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Koperasi:</strong> Koperasi adalah badan usaha yang beranggotakan orang-orang atau badan hukum yang bekerja sama berdasarkan asas kekeluargaan untuk meningkatkan kesejahteraan anggota.</p>
+            </div>
+            
+            <p><strong>Tujuan Koperasi:</strong></p>
+            <ul class="list-content">
+                <li>Meningkatkan kesejahteraan anggota</li>
+                <li>Membantu perekonomian masyarakat</li>
+                <li>Mengembangkan semangat gotong royong</li>
+                <li>Membantu usaha kecil dan menengah</li>
+            </ul>
+        </div>
+
+        <!-- A. Ciri-Ciri Koperasi -->
+        <div class="koperasi-ciri-box">
+            <span class="badge-title"><i class="fas fa-tags"></i> A. CIRI-CIRI KOPERASI</span>
+            
+            <ul class="list-content">
+                <li>Berdasarkan asas kekeluargaan</li>
+                <li>Keanggotaan bersifat sukarela</li>
+                <li>Keuntungan dibagi secara adil</li>
+                <li>Bertujuan menyejahterakan anggota</li>
+                <li>Modal berasal dari anggota</li>
+            </ul>
+        </div>
+
+        <!-- B. Prinsip-Prinsip Koperasi -->
+        <div class="koperasi-prinsip-box">
+            <span class="badge-title"><i class="fas fa-gem"></i> B. PRINSIP-PRINSIP KOPERASI</span>
+            
+            <ul class="list-content">
+                <li>Keanggotaan sukarela dan terbuka</li>
+                <li>Pengelolaan dilakukan secara demokratis</li>
+                <li>Pembagian sisa hasil usaha secara adil</li>
+                <li>Pendidikan perkoperasian</li>
+                <li>Kerja sama antar koperasi</li>
+            </ul>
+        </div>
+
+        <!-- C. Jenis-Jenis Koperasi -->
+        <div class="jenis-box">
+            <span class="badge-title"><i class="fas fa-th-large"></i> C. JENIS-JENIS KOPERASI</span>
+            
+            <div class="jenis-grid">
+                <div class="jenis-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h4>Koperasi Konsumsi</h4>
+                    <p>Menyediakan kebutuhan sehari-hari anggota</p>
+                    <p><small>Contoh: Koperasi sekolah, Koperasi pegawai</small></p>
+                </div>
+                <div class="jenis-card">
+                    <i class="fas fa-industry"></i>
+                    <h4>Koperasi Produksi</h4>
+                    <p>Membantu proses produksi anggota</p>
+                    <p><small>Contoh: Koperasi petani, Koperasi nelayan</small></p>
+                </div>
+                <div class="jenis-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h4>Koperasi Simpan Pinjam</h4>
+                    <p>Melayani simpanan dan pinjaman anggota</p>
+                    <p><small>Contoh: Koperasi kredit</small></p>
+                </div>
+                <div class="jenis-card">
+                    <i class="fas fa-truck"></i>
+                    <h4>Koperasi Jasa</h4>
+                    <p>Bergerak di bidang pelayanan jasa</p>
+                    <p><small>Contoh: Koperasi transportasi</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- D. Manfaat Koperasi -->
+        <div class="manfaat-box">
+            <span class="badge-title"><i class="fas fa-thumbs-up"></i> D. MANFAAT KOPERASI</span>
+            
+            <ul class="list-content">
+                <li>Membantu kebutuhan anggota</li>
+                <li>Memberikan pinjaman dengan syarat mudah</li>
+                <li>Meningkatkan pendapatan anggota</li>
+                <li>Melatih sikap gotong royong</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Tolong-Menolong -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG TOLONG-MENOLONG</span>
+            
+            <div class="hadis-text">
+                وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Allah akan menolong seorang hamba selama hamba itu menolong saudaranya."</strong></p>
+                <p>(HR. Muslim)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Islam mengajarkan kerja sama dan saling membantu</li>
+                <li>Koperasi mencerminkan semangat tolong-menolong</li>
+            </ul>
+        </div>
+
+        <!-- Pengertian BUMN -->
+        <div class="bumn-pengertian-box">
+            <span class="badge-title"><i class="fas fa-building"></i> PENGERTIAN BUMN</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian BUMN:</strong> BUMN (Badan Usaha Milik Negara) adalah badan usaha yang sebagian atau seluruh modalnya dimiliki oleh negara.</p>
+            </div>
+            
+            <p><strong>Tujuan BUMN:</strong></p>
+            <ul class="list-content">
+                <li>Memberikan pelayanan kepada masyarakat</li>
+                <li>Menambah pendapatan negara</li>
+                <li>Mengelola sumber daya penting</li>
+                <li>Membuka lapangan pekerjaan</li>
+            </ul>
+        </div>
+
+        <!-- E. Ciri-Ciri BUMN -->
+        <div class="bumn-ciri-box">
+            <span class="badge-title"><i class="fas fa-tags"></i> E. CIRI-CIRI BUMN</span>
+            
+            <ul class="list-content">
+                <li>Modal dimiliki negara</li>
+                <li>Bertujuan melayani masyarakat</li>
+                <li>Bergerak di bidang penting bagi negara</li>
+                <li>Keuntungan untuk negara dan masyarakat</li>
+            </ul>
+        </div>
+
+        <!-- F. Jenis-Jenis BUMN -->
+        <div class="bumn-jenis-box">
+            <span class="badge-title"><i class="fas fa-th-large"></i> F. JENIS-JENIS BUMN</span>
+            
+            <div class="jenis-grid">
+                <div class="jenis-card">
+                    <i class="fas fa-church"></i>
+                    <h4>Perusahaan Umum (Perum)</h4>
+                    <p>Melayani masyarakat sekaligus mencari keuntungan</p>
+                    <p><small>Contoh: Perum Bulog</small></p>
+                </div>
+                <div class="jenis-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Persero</h4>
+                    <p>Modal berbentuk saham, sebagian besar dimiliki negara</p>
+                    <p><small>Contoh: PLN, Pertamina, Bank Mandiri</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- G. Peran BUMN dalam Perekonomian -->
+        <div class="peran-box">
+            <span class="badge-title"><i class="fas fa-chart-line"></i> G. PERAN BUMN DALAM PEREKONOMIAN</span>
+            
+            <ul class="list-content">
+                <li>Menyediakan kebutuhan masyarakat</li>
+                <li>Menjaga kestabilan ekonomi</li>
+                <li>Membantu pembangunan negara</li>
+                <li>Menyediakan lapangan pekerjaan</li>
+            </ul>
+        </div>
+
+        <!-- Ayat Al-Qur'an Tentang Kerja Sama -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-quran"></i> AYAT AL-QUR'AN TENTANG KERJA SAMA</span>
+            
+            <div class="hadis-text" style="font-size: 1.5rem;">
+                وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Dan tolong-menolonglah kamu dalam kebajikan dan takwa."</strong></p>
+                <p>(QS. Al-Maidah: 2)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Manusia dianjurkan saling membantu dalam kebaikan</li>
+                <li>Kerja sama ekonomi harus membawa manfaat bersama</li>
+            </ul>
+        </div>
+
+        <!-- Perbedaan Koperasi dan BUMN -->
+        <div class="perbedaan-box">
+            <span class="badge-title"><i class="fas fa-balance-scale"></i> PERBEDAAN KOPERASI DAN BUMN</span>
+            
+            <div class="two-column">
+                <div class="col">
+                    <h4><i class="fas fa-handshake"></i> Koperasi</h4>
+                    <ul class="list-content">
+                        <li>Dimiliki anggota</li>
+                        <li>Bertujuan menyejahterakan anggota</li>
+                        <li>Berdasarkan asas kekeluargaan</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4><i class="fas fa-building"></i> BUMN</h4>
+                    <ul class="list-content">
+                        <li>Dimiliki negara</li>
+                        <li>Bertujuan melayani masyarakat dan memperoleh keuntungan</li>
+                        <li>Dikelola pemerintah</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contoh Koperasi dan BUMN -->
+        <div class="contoh-box">
+            <span class="badge-title"><i class="fas fa-list"></i> CONTOH KOPERASI DAN BUMN DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Menabung di koperasi sekolah</li>
+                <li>Membeli gas dari Pertamina</li>
+                <li>Menggunakan listrik dari PLN</li>
+                <li>Meminjam uang di koperasi simpan pinjam</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Koperasi dan BUMN memiliki peran penting dalam perekonomian Indonesia. Koperasi bertujuan meningkatkan kesejahteraan anggota melalui kerja sama, sedangkan BUMN membantu menyediakan kebutuhan masyarakat dan meningkatkan pendapatan negara. Dalam Islam, kerja sama dan tolong-menolong sangat dianjurkan untuk menciptakan kesejahteraan bersama.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="12-perdagangan-internasional.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="14-kewirausahaan.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

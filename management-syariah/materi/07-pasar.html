@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .jenis-pertama-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .jenis-kedua-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .jenis-ketiga-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .jenis-keempat-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .jenis-kelima-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .peranan-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+
+        .badge-pengertian { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-jenis { background: #1565c0; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-tradisional { background: #e65100; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-modern { background: #ad1457; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-waktu { background: #6a1b9a; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-barang { background: #00838f; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        .syarat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
+        .syarat-card { background: #f5f5f5; border-radius: 12px; padding: 0.8rem; text-align: center; }
+        .syarat-card i { font-size: 1.5rem; color: #1a6e4b; margin-bottom: 0.3rem; display: block; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 7: <span class="highlight">Pasar</span></h1>
+        <p>Memahami pengertian, fungsi, jenis, dan peranan pasar dalam perekonomian</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-store"></i> Pasar</h1>
+
+        <!-- Pengertian Pasar -->
+        <div class="pengertian-box">
+            <span class="badge-pengertian"><i class="fas fa-info-circle"></i> PENGERTIAN PASAR</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Pasar:</strong> Pasar adalah tempat bertemunya penjual dan pembeli untuk melakukan kegiatan jual beli barang atau jasa, baik secara langsung maupun tidak langsung.</p>
+            </div>
+            
+            <p><strong>Tujuan Pasar:</strong></p>
+            <ul class="list-content">
+                <li>Mempermudah kegiatan jual beli</li>
+                <li>Memenuhi kebutuhan masyarakat</li>
+                <li>Membantu distribusi barang</li>
+                <li>Membentuk harga barang</li>
+            </ul>
+            
+            <p><strong>Fungsi Pasar:</strong></p>
+            <ul class="list-content">
+                <li><strong>1. Fungsi Distribusi:</strong> Pasar membantu menyalurkan barang dari produsen kepada konsumen.</li>
+                <li><strong>2. Fungsi Pembentukan Harga:</strong> Harga barang terbentuk melalui kesepakatan antara penjual dan pembeli.</li>
+                <li><strong>3. Fungsi Promosi:</strong> Pasar menjadi tempat memperkenalkan barang atau jasa kepada masyarakat.</li>
+                <li><strong>4. Fungsi Sosial:</strong> Pasar menjadi tempat interaksi antara penjual dan pembeli.</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Jual Beli -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG JUAL BELI</span>
+            
+            <div class="hadis-text">
+                تَاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Pedagang yang jujur dan terpercaya akan bersama para nabi, orang-orang yang benar, dan para syuhada."</strong></p>
+                <p>(HR. Tirmidzi)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Pedagang harus jujur dalam berdagang</li>
+                <li>Tidak boleh menipu pembeli</li>
+                <li>Jual beli harus dilakukan secara amanah</li>
+            </ul>
+        </div>
+
+        <!-- A. Berdasarkan Bentuk Kegiatannya -->
+        <div class="jenis-pertama-box">
+            <span class="badge-jenis"><i class="fas fa-shapes"></i> A. BERDASARKAN BENTUK KEGIATANNYA</span>
+            
+            <p><strong>1. Pasar Nyata (Konkret)</strong></p>
+            <p>Pasar yang penjual dan pembelinya bertemu langsung.</p>
+            <p><strong>Contoh:</strong> Pasar tradisional, Pasar hewan, Pasar buah</p>
+            
+            <p><strong>2. Pasar Abstrak</strong></p>
+            <p>Pasar yang penjual dan pembelinya tidak bertemu langsung.</p>
+            <p><strong>Contoh:</strong> Toko online, Marketplace, Bursa saham</p>
+        </div>
+
+        <!-- B. Berdasarkan Cara Transaksinya -->
+        <div class="jenis-kedua-box">
+            <span class="badge-tradisional"><i class="fas fa-handshake"></i> B. BERDASARKAN CARA TRANSAKSINYA</span>
+            
+            <p><strong>1. Pasar Tradisional</strong></p>
+            <p><strong>Pengertian:</strong> Pasar yang proses jual belinya dilakukan secara langsung dan biasanya terjadi tawar-menawar.</p>
+            <p><strong>Ciri-Ciri:</strong> Harga bisa ditawar, Tempat sederhana, Penjual dan pembeli bertemu langsung</p>
+            <p><strong>Contoh:</strong> Pasar desa, Pasar sayur, Pasar ikan</p>
+            <p><strong>Kelebihan:</strong> Harga lebih murah, Bisa tawar-menawar, Hubungan sosial lebih dekat</p>
+            <p><strong>Kekurangan:</strong> Kurang nyaman, Kebersihan kurang terjaga</p>
+            
+            <p><strong>2. Pasar Modern</strong></p>
+            <p><strong>Pengertian:</strong> Pasar yang menggunakan sistem modern dan harga sudah ditetapkan.</p>
+            <p><strong>Ciri-Ciri:</strong> Harga pas, Tempat bersih dan nyaman, Pelayanan modern</p>
+            <p><strong>Contoh:</strong> Minimarket, Supermarket, Mall</p>
+            <p><strong>Kelebihan:</strong> Nyaman dan bersih, Barang tertata rapi, Pelayanan cepat</p>
+            <p><strong>Kekurangan:</strong> Harga relatif lebih mahal, Tidak bisa tawar-menawar</p>
+        </div>
+
+        <!-- Hadis Tentang Larangan Menipu -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG LARANGAN MENIPU</span>
+            
+            <div class="hadis-text">
+                مَنْ غَشَّ فَلَيْسَ مِنِّي
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Barang siapa menipu, maka ia bukan golongan kami."</strong></p>
+                <p>(HR. Muslim)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Islam melarang kecurangan dalam perdagangan</li>
+                <li>Penjual harus memberikan barang sesuai kualitas</li>
+                <li>Timbangan dan ukuran harus benar</li>
+            </ul>
+        </div>
+
+        <!-- C. Berdasarkan Waktu Kegiatannya -->
+        <div class="jenis-ketiga-box">
+            <span class="badge-waktu"><i class="fas fa-calendar-alt"></i> C. BERDASARKAN WAKTU KEGIATANNYA</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Pasar Harian:</strong> Pasar yang buka setiap hari. Contoh: Pasar tradisional</li>
+                <li><strong>2. Pasar Mingguan:</strong> Pasar yang buka seminggu sekali. Contoh: Pasar hewan mingguan</li>
+                <li><strong>3. Pasar Bulanan:</strong> Pasar yang buka setiap bulan. Contoh: Pameran bulanan</li>
+                <li><strong>4. Pasar Tahunan:</strong> Pasar yang diadakan setahun sekali. Contoh: Pekan raya</li>
+            </ul>
+        </div>
+
+        <!-- D. Berdasarkan Jenis Barangnya -->
+        <div class="jenis-keempat-box">
+            <span class="badge-barang"><i class="fas fa-box-open"></i> D. BERDASARKAN JENIS BARANGNYA</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Pasar Barang Konsumsi:</strong> Menjual barang untuk kebutuhan sehari-hari. Contoh: Pasar sembako, Pasar pakaian</li>
+                <li><strong>2. Pasar Barang Produksi:</strong> Menjual barang untuk kegiatan produksi. Contoh: Pasar alat pertanian, Pasar mesin</li>
+            </ul>
+        </div>
+
+        <!-- E. Berdasarkan Luas Jangkauannya -->
+        <div class="jenis-kelima-box">
+            <span class="badge-barang"><i class="fas fa-globe"></i> E. BERDASARKAN LUAS JANGKAUANNYA</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Pasar Lokal:</strong> Melayani wilayah tertentu. Contoh: Pasar desa</li>
+                <li><strong>2. Pasar Nasional:</strong> Melayani seluruh wilayah negara. Contoh: Pasar nasional Indonesia</li>
+                <li><strong>3. Pasar Internasional:</strong> Melayani perdagangan antarnegara. Contoh: Ekspor dan impor</li>
+            </ul>
+        </div>
+
+        <!-- Syarat Terjadinya Pasar -->
+        <div class="peranan-box">
+            <span class="badge-pengertian"><i class="fas fa-check-circle"></i> SYARAT TERJADINYA PASAR</span>
+            
+            <div class="syarat-grid">
+                <div class="syarat-card">
+                    <i class="fas fa-user"></i>
+                    <p><strong>Ada Penjual</strong></p>
+                </div>
+                <div class="syarat-card">
+                    <i class="fas fa-users"></i>
+                    <p><strong>Ada Pembeli</strong></p>
+                </div>
+                <div class="syarat-card">
+                    <i class="fas fa-box"></i>
+                    <p><strong>Ada Barang/Jasa</strong></p>
+                </div>
+                <div class="syarat-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p><strong>Ada Kesepakatan Harga</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peranan Pasar dalam Perekonomian -->
+        <div class="peranan-box">
+            <span class="badge-pengertian"><i class="fas fa-chart-line"></i> PERANAN PASAR DALAM PEREKONOMIAN</span>
+            
+            <ul class="list-content">
+                <li>Membantu memenuhi kebutuhan masyarakat</li>
+                <li>Membuka lapangan pekerjaan</li>
+                <li>Meningkatkan pendapatan masyarakat</li>
+                <li>Memperlancar distribusi barang</li>
+            </ul>
+        </div>
+
+        <!-- Contoh Kegiatan Pasar -->
+        <div class="peranan-box">
+            <span class="badge-pengertian"><i class="fas fa-list"></i> CONTOH KEGIATAN PASAR DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Membeli sayur di pasar tradisional</li>
+                <li>Berbelanja di minimarket</li>
+                <li>Menjual barang melalui marketplace online</li>
+                <li>Membeli kebutuhan sekolah di toko</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Pasar merupakan tempat bertemunya penjual dan pembeli untuk melakukan transaksi barang atau jasa. Pasar memiliki berbagai jenis dan fungsi penting dalam kehidupan ekonomi, seperti membantu distribusi barang, membentuk harga, dan memenuhi kebutuhan masyarakat. Dalam Islam, kegiatan jual beli harus dilakukan dengan jujur, amanah, dan tanpa penipuan agar mendapatkan keberkahan.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="06-permintaan-dan-penawaran.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="08-uang-dan-lembaga-keuangan.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

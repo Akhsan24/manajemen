@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel | Manajemen Syariah</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .article-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #e8e2d8;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-color: #c9a03d;
+        }
+        .article-img {
+            background: linear-gradient(135deg, #1a6e4b, #0e4d32);
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        .article-content {
+            padding: 1.5rem;
+        }
+        .article-category {
+            display: inline-block;
+            background: #eaf5ef;
+            color: #1a6e4b;
+            font-size: 0.7rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 0.8rem;
+        }
+        .article-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #0e4d32;
+        }
+        .article-content p {
+            color: #5a6e6b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .read-more {
+            color: #c9a03d;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .read-more i {
+            transition: transform 0.2s;
+        }
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Artikel <span class="highlight">Syariah</span></h1>
+        <p>Wawasan dan tips seputar ekonomi serta manajemen Islam</p>
+    </div>
+</section>
+
+<section class="article-list" style="padding: 60px 0;">
+    <div class="container">
+        <div class="article-grid" id="articleGrid">
+            <!-- Artikel 1 -->
+            <div class="article-card" onclick="location.href='artikel/1-cara-mudah-paham-ekonomi.html'">
+                <div class="article-img">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-lightbulb"></i> Tips Belajar</span>
+                    <h3>5 Cara Mudah Memahami Ekonomi untuk Pemula</h3>
+                    <p>Ekonomi sering dianggap sulit. Padahal, jika dipelajari dengan cara yang tepat, ilmu ekonomi bisa sangat menyenangkan!</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Artikel 2 -->
+            <div class="article-card" onclick="location.href='artikel/2-tips-mengatur-uang-saku.html'">
+                <div class="article-img">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-coins"></i> Keuangan Sehari-hari</span>
+                    <h3>Tips Mengatur Uang Saku agar Tidak Boros</h3>
+                    <p>Uang saku cepat habis? Yuk belajar mengatur keuangan pribadi dengan prinsip sederhana ala ekonomi syariah.</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Artikel 3 -->
+            <div class="article-card" onclick="location.href='artikel/3-contoh-pasar-modern-vs-tradisional.html'">
+                <div class="article-img">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-chart-line"></i> Penerapan Materi</span>
+                    <h3>Contoh Pasar Modern vs Tradisional di Sekitarmu</h3>
+                    <p>Kenali perbedaan pasar tradisional dan modern lengkap dengan contoh nyata yang bisa kamu temui sehari-hari.</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Artikel 4 -->
+            <div class="article-card" onclick="location.href='artikel/4-mengapa-riba-dilarang.html'">
+                <div class="article-img">
+                    <i class="fas fa-ban"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-mosque"></i> Perspektif Syariah</span>
+                    <h3>Mengapa Riba Dilarang dalam Islam?</h3>
+                    <p>Riba sering dianggap sepele, padahal dampaknya sangat besar. Simak penjelasan lengkap larangan riba dalam Al-Qur'an dan hadis.</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Artikel 5 -->
+            <div class="article-card" onclick="location.href='artikel/5-cara-memulai-usaha-kecil.html'">
+                <div class="article-img">
+                    <i class="fas fa-chalkboard-user"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-rocket"></i> Kewirausahaan</span>
+                    <h3>Cara Memulai Usaha Kecil-Kecilan dari Rumah</h3>
+                    <p>Ingin punya bisnis sendiri tapi modal terbatas? Ini dia panduan praktis memulai usaha dari rumah untuk pemula.</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Artikel 6 -->
+            <div class="article-card" onclick="location.href='artikel/6-perbedaan-bank-syariah-dan-konvensional.html'">
+                <div class="article-img">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-chart-line"></i> Keuangan Syariah</span>
+                    <h3>Perbedaan Bank Syariah dan Bank Konvensional</h3>
+                    <p>Apa bedanya bank syariah dengan bank biasa? Simak penjelasan lengkap sistem bagi hasil vs sistem bunga.</p>
+                    <span class="read-more">Baca selengkapnya <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

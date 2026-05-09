@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APBN dan APBD | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .fungsi-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .sumber-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .pengeluaran-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .pajak-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .perbedaan-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .contoh-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+
+        .badge-title { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .fungsi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .fungsi-card { background: #f5f5f5; border-radius: 16px; padding: 1rem; text-align: center; }
+        .fungsi-card i { font-size: 2rem; color: #1a6e4b; margin-bottom: 0.5rem; display: block; }
+        .fungsi-card h4 { margin-bottom: 0.3rem; color: #1a6e4b; }
+
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .col { background: #f9f9f9; border-radius: 16px; padding: 1rem; }
+        .col h4 { color: #1a6e4b; margin-bottom: 0.8rem; text-align: center; }
+        .col i { margin-right: 5px; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } .two-column { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 11: <span class="highlight">APBN dan APBD</span></h1>
+        <p>Memahami anggaran pendapatan dan belanja negara serta daerah</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-file-invoice-dollar"></i> APBN dan APBD</h1>
+
+        <!-- Pengertian APBN dan APBD -->
+        <div class="pengertian-box">
+            <span class="badge-title"><i class="fas fa-info-circle"></i> PENGERTIAN APBN DAN APBD</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian APBN:</strong> APBN (Anggaran Pendapatan dan Belanja Negara) adalah rencana pendapatan dan pengeluaran negara selama satu tahun yang disusun oleh pemerintah pusat dan disetujui oleh DPR.</p>
+            </div>
+            <div class="definition-box">
+                <p><strong>Pengertian APBD:</strong> APBD (Anggaran Pendapatan dan Belanja Daerah) adalah rencana pendapatan dan pengeluaran daerah selama satu tahun yang disusun oleh pemerintah daerah dan disetujui oleh DPRD.</p>
+            </div>
+            
+            <p><strong>Tujuan APBN dan APBD:</strong></p>
+            <ul class="list-content">
+                <li>Mengatur keuangan negara dan daerah</li>
+                <li>Meningkatkan kesejahteraan masyarakat</li>
+                <li>Membiayai pembangunan</li>
+                <li>Menjaga kestabilan ekonomi</li>
+            </ul>
+        </div>
+
+        <!-- A. Fungsi APBN dan APBD -->
+        <div class="fungsi-box">
+            <span class="badge-title"><i class="fas fa-cogs"></i> A. FUNGSI APBN DAN APBD</span>
+            
+            <div class="fungsi-grid">
+                <div class="fungsi-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>Perencanaan</h4>
+                    <p>Sebagai pedoman pemerintah dalam mengatur pengeluaran dan pemasukan.</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-eye"></i>
+                    <h4>Pengawasan</h4>
+                    <p>Mengawasi penggunaan uang negara agar sesuai aturan.</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Alokasi</h4>
+                    <p>Mengalokasikan dana untuk pembangunan dan pelayanan masyarakat.</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Distribusi</h4>
+                    <p>Membantu pemerataan pendapatan masyarakat.</p>
+                </div>
+                <div class="fungsi-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h4>Stabilisasi</h4>
+                    <p>Menjaga kestabilan ekonomi negara.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- B. Sumber Pendapatan Negara -->
+        <div class="sumber-box">
+            <span class="badge-title"><i class="fas fa-money-bill-wave"></i> B. SUMBER PENDAPATAN NEGARA</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Pajak:</strong> Penghasilan utama negara yang berasal dari masyarakat. <br>Contoh: Pajak kendaraan, Pajak penghasilan, Pajak pertambahan nilai</li>
+                <li><strong>2. Retribusi:</strong> Pembayaran atas jasa atau fasilitas yang diberikan pemerintah. <br>Contoh: Retribusi parkir, Retribusi pasar</li>
+                <li><strong>3. Hasil BUMN:</strong> Keuntungan dari badan usaha milik negara.</li>
+                <li><strong>4. Hibah:</strong> Bantuan dari pihak lain yang tidak mengikat.</li>
+            </ul>
+        </div>
+
+        <!-- C. Pengeluaran Negara dan Daerah -->
+        <div class="pengeluaran-box">
+            <span class="badge-title"><i class="fas fa-chart-line"></i> C. PENGELUARAN NEGARA DAN DAERAH</span>
+            
+            <ul class="list-content">
+                <li><strong>1. Belanja Pegawai:</strong> Untuk membayar gaji pegawai negeri.</li>
+                <li><strong>2. Belanja Barang dan Jasa:</strong> Untuk kebutuhan operasional pemerintah.</li>
+                <li><strong>3. Belanja Pembangunan:</strong> Untuk membangun fasilitas umum. <br>Contoh: Jalan, Sekolah, Rumah sakit</li>
+                <li><strong>4. Bantuan Sosial:</strong> Untuk membantu masyarakat yang membutuhkan.</li>
+            </ul>
+        </div>
+
+        <!-- D. Pajak -->
+        <div class="pajak-box">
+            <span class="badge-title"><i class="fas fa-receipt"></i> D. PAJAK</span>
+            
+            <p><strong>Pengertian Pajak:</strong> Pajak adalah iuran wajib yang dibayarkan masyarakat kepada negara berdasarkan undang-undang tanpa mendapatkan balas jasa secara langsung.</p>
+            
+            <p><strong>Fungsi Pajak:</strong></p>
+            <ul class="list-content">
+                <li>Membiayai pembangunan</li>
+                <li>Membayar fasilitas umum</li>
+                <li>Menjalankan pemerintahan</li>
+            </ul>
+            
+            <p><strong>Contoh Pajak:</strong></p>
+            <ul class="list-content">
+                <li>Pajak kendaraan bermotor</li>
+                <li>Pajak bumi dan bangunan</li>
+                <li>Pajak penghasilan</li>
+            </ul>
+        </div>
+
+        <!-- Hadis Tentang Amanah dan Tanggung Jawab -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG AMANAH DAN TANGGUNG JAWAB</span>
+            
+            <div class="hadis-text">
+                كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Setiap kalian adalah pemimpin dan setiap kalian akan dimintai pertanggungjawaban."</strong></p>
+                <p>(HR. Bukhari dan Muslim)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Pemimpin harus bertanggung jawab dalam mengelola keuangan negara</li>
+                <li>Uang rakyat harus digunakan dengan jujur dan amanah</li>
+            </ul>
+        </div>
+
+        <!-- Ayat Al-Qur'an Tentang Keadilan -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-quran"></i> AYAT AL-QUR'AN TENTANG KEADILAN</span>
+            
+            <div class="hadis-text" style="font-size: 1.5rem;">
+                إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya."</strong></p>
+                <p>(QS. An-Nisa: 58)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Pemerintah harus mengelola anggaran secara adil</li>
+                <li>Dana negara harus digunakan untuk kesejahteraan masyarakat</li>
+            </ul>
+        </div>
+
+        <!-- Perbedaan APBN dan APBD -->
+        <div class="perbedaan-box">
+            <span class="badge-title"><i class="fas fa-balance-scale"></i> PERBEDAAN APBN DAN APBD</span>
+            
+            <div class="two-column">
+                <div class="col">
+                    <h4><i class="fas fa-building"></i> APBN</h4>
+                    <ul class="list-content">
+                        <li>Dikelola pemerintah pusat</li>
+                        <li>Berlaku untuk seluruh negara</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4><i class="fas fa-city"></i> APBD</h4>
+                    <ul class="list-content">
+                        <li>Dikelola pemerintah daerah</li>
+                        <li>Berlaku untuk daerah tertentu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contoh APBN dan APBD -->
+        <div class="contoh-box">
+            <span class="badge-title"><i class="fas fa-list"></i> CONTOH APBN DAN APBD DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Pembangunan jalan raya</li>
+                <li>Bantuan pendidikan</li>
+                <li>Program kesehatan gratis</li>
+                <li>Pembangunan sekolah dan jembatan</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>APBN dan APBD adalah rencana keuangan negara dan daerah yang digunakan untuk membiayai pembangunan dan kesejahteraan masyarakat. Pendapatan negara berasal dari pajak dan sumber lainnya, sedangkan pengeluaran digunakan untuk pelayanan masyarakat. Dalam Islam, pengelolaan keuangan harus dilakukan secara amanah, adil, dan bertanggung jawab.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="10-pendapatan-nasional.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="12-perdagangan-internasional.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

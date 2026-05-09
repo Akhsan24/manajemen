@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uang dan Lembaga Keuangan | Materi Ekonomi Syariah</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .materi-container { max-width: 900px; margin: 0 auto; background: white; border-radius: 24px; padding: 2.5rem; margin: 40px auto; border: 1px solid #e8e2d8; }
+        .materi-title { color: #0e4d32; border-bottom: 3px solid #c9a03d; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .sub-title { color: #1a6e4b; margin: 1.5rem 0 0.8rem 0; font-size: 1.3rem; }
+        .sub-title i { color: #c9a03d; margin-right: 8px; }
+        .definition-box { background: #eaf5ef; padding: 1.2rem; border-radius: 16px; margin: 1rem 0; border-left: 4px solid #1a6e4b; }
+        .list-content { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .list-content li { margin-bottom: 0.5rem; }
+        .nav-materi { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e8e2d8; }
+
+        /* Warna khusus untuk pembeda sub bab */
+        .pengertian-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #2e7d32; }
+        .fungsi-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .jenis-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+        .syarat-box { background: linear-gradient(135deg, #fce4ec, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #ad1457; }
+        .lembaga-box { background: linear-gradient(135deg, #f3e5f5, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #6a1b9a; }
+        .bank-sentral-box { background: linear-gradient(135deg, #e0f7fa, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #00838f; }
+        .bank-umum-box { background: linear-gradient(135deg, #e8e8e8, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #5a6e6b; }
+        .bank-syariah-box { background: linear-gradient(135deg, #e8f5e9, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1a6e4b; }
+        .hadis-box { background: linear-gradient(135deg, #fff8e1, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #c9a03d; }
+        .koperasi-box { background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #1565c0; }
+        .ojk-box { background: linear-gradient(135deg, #fff3e0, #ffffff); border-radius: 20px; padding: 1.2rem; margin: 1rem 0; border-left: 5px solid #e65100; }
+
+        .badge-pengertian { background: #2e7d32; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-fungsi { background: #1565c0; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-jenis { background: #e65100; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-syarat { background: #ad1457; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-lembaga { background: #6a1b9a; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+        .badge-hadis { background: #c9a03d; color: #1a2c2e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; display: inline-block; margin-bottom: 0.5rem; }
+
+        .bank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
+        .bank-card { background: #f5f5f5; border-radius: 12px; padding: 0.8rem; text-align: center; }
+        .bank-card i { font-size: 1.5rem; color: #1a6e4b; margin-bottom: 0.3rem; display: block; }
+
+        .hadis-text { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.2rem; text-align: center; direction: rtl; margin-bottom: 0.5rem; }
+        .hadis-sumber { text-align: center; font-style: italic; color: #5a6e6b; margin-bottom: 0.5rem; }
+
+        @media (max-width: 768px) { .materi-container { padding: 1.2rem; margin: 20px; } }
+    </style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi 8: <span class="highlight">Uang dan Lembaga Keuangan</span></h1>
+        <p>Memahami pengertian, fungsi, jenis uang, dan lembaga keuangan di Indonesia</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="materi-container">
+        <h1 class="materi-title"><i class="fas fa-money-bill-wave"></i> Uang dan Lembaga Keuangan</h1>
+
+        <!-- Pengertian Uang -->
+        <div class="pengertian-box">
+            <span class="badge-pengertian"><i class="fas fa-info-circle"></i> PENGERTIAN UANG</span>
+            
+            <div class="definition-box">
+                <p><strong>Pengertian Uang:</strong> Uang adalah alat tukar yang digunakan masyarakat untuk melakukan transaksi jual beli barang dan jasa.</p>
+            </div>
+            
+            <p><strong>Tujuan Adanya Uang:</strong></p>
+            <ul class="list-content">
+                <li>Mempermudah transaksi</li>
+                <li>Menghindari sistem barter</li>
+                <li>Menentukan nilai barang</li>
+                <li>Mempermudah pembayaran</li>
+            </ul>
+        </div>
+
+        <!-- A. Fungsi Uang -->
+        <div class="fungsi-box">
+            <span class="badge-fungsi"><i class="fas fa-cogs"></i> A. FUNGSI UANG</span>
+            
+            <p><strong>1. Fungsi Asli Uang</strong></p>
+            <ul class="list-content">
+                <li><strong>a. Sebagai Alat Tukar:</strong> Uang digunakan untuk membeli barang atau jasa. <br>Contoh: Membeli makanan menggunakan uang</li>
+                <li><strong>b. Sebagai Satuan Hitung:</strong> Uang digunakan untuk menentukan nilai atau harga barang. <br>Contoh: Harga buku Rp20.000</li>
+            </ul>
+            
+            <p><strong>2. Fungsi Turunan Uang</strong></p>
+            <ul class="list-content">
+                <li><strong>a. Sebagai Alat Pembayaran:</strong> Digunakan untuk membayar kebutuhan. <br>Contoh: Membayar listrik, Membayar sekolah</li>
+                <li><strong>b. Sebagai Alat Penimbun Kekayaan:</strong> Uang dapat disimpan untuk digunakan di masa depan. <br>Contoh: Menabung di bank</li>
+                <li><strong>c. Sebagai Pemindah Kekayaan:</strong> Uang dapat digunakan untuk memindahkan harta. <br>Contoh: Transfer uang kepada keluarga</li>
+                <li><strong>d. Sebagai Pendorong Kegiatan Ekonomi:</strong> Uang membantu memperlancar perdagangan dan usaha.</li>
+            </ul>
+        </div>
+
+        <!-- B. Jenis-Jenis Uang -->
+        <div class="jenis-box">
+            <span class="badge-jenis"><i class="fas fa-tags"></i> B. JENIS-JENIS UANG</span>
+            
+            <p><strong>1. Berdasarkan Bahannya</strong></p>
+            <ul class="list-content">
+                <li><strong>a. Uang Logam:</strong> Terbuat dari logam. Contoh: Koin Rp500, Koin Rp1.000</li>
+                <li><strong>b. Uang Kertas:</strong> Terbuat dari kertas khusus. Contoh: Rp2.000, Rp50.000, Rp100.000</li>
+            </ul>
+            
+            <p><strong>2. Berdasarkan Lembaga yang Mengeluarkan</strong></p>
+            <ul class="list-content">
+                <li><strong>a. Uang Kartal:</strong> Uang resmi yang dikeluarkan bank sentral. Contoh: Uang rupiah</li>
+                <li><strong>b. Uang Giral:</strong> Uang yang digunakan melalui cek atau giro. Contoh: Cek bank, Transfer rekening</li>
+            </ul>
+        </div>
+
+        <!-- C. Syarat-Syarat Uang -->
+        <div class="syarat-box">
+            <span class="badge-syarat"><i class="fas fa-check-circle"></i> C. SYARAT-SYARAT UANG</span>
+            
+            <ul class="list-content">
+                <li>Mudah dibawa</li>
+                <li>Tidak mudah rusak</li>
+                <li>Mudah dibagi</li>
+                <li>Diterima masyarakat</li>
+                <li>Memiliki nilai stabil</li>
+            </ul>
+        </div>
+
+        <!-- D. Lembaga Keuangan -->
+        <div class="lembaga-box">
+            <span class="badge-lembaga"><i class="fas fa-university"></i> D. LEMBAGA KEUANGAN</span>
+            
+            <p><strong>Pengertian Lembaga Keuangan:</strong> Lembaga keuangan adalah badan yang menghimpun dan menyalurkan dana kepada masyarakat.</p>
+            
+            <p><strong>Tujuan Lembaga Keuangan:</strong></p>
+            <ul class="list-content">
+                <li>Membantu kegiatan ekonomi</li>
+                <li>Menyimpan uang masyarakat</li>
+                <li>Memberikan pinjaman</li>
+                <li>Memperlancar transaksi keuangan</li>
+            </ul>
+        </div>
+
+        <!-- E. Jenis Lembaga Keuangan - Bank Sentral -->
+        <div class="bank-sentral-box">
+            <span class="badge-lembaga"><i class="fas fa-building"></i> E. JENIS LEMBAGA KEUANGAN (1. BANK SENTRAL)</span>
+            
+            <p><strong>Bank Sentral:</strong> Bank sentral adalah bank yang bertugas mengatur dan menjaga kestabilan nilai mata uang negara.</p>
+            <p><strong>Contoh:</strong> Bank Indonesia (BI)</p>
+            <p><strong>Tugas Bank Sentral:</strong></p>
+            <ul class="list-content">
+                <li>Mengatur peredaran uang</li>
+                <li>Menjaga kestabilan rupiah</li>
+                <li>Mengawasi bank umum</li>
+            </ul>
+        </div>
+
+        <!-- Bank Umum -->
+        <div class="bank-umum-box">
+            <span class="badge-lembaga"><i class="fas fa-church"></i> 2. BANK UMUM</span>
+            
+            <p><strong>Bank Umum:</strong> Bank umum adalah bank yang melayani masyarakat dalam kegiatan simpan pinjam dan transaksi keuangan.</p>
+            <p><strong>Kegiatan Bank Umum:</strong></p>
+            <ul class="list-content">
+                <li>Menyimpan uang</li>
+                <li>Memberikan pinjaman</li>
+                <li>Transfer uang</li>
+                <li>Menukar uang</li>
+            </ul>
+            <p><strong>Contoh:</strong></p>
+            <div class="bank-grid">
+                <div class="bank-card"><i class="fas fa-university"></i> BRI</div>
+                <div class="bank-card"><i class="fas fa-university"></i> BCA</div>
+                <div class="bank-card"><i class="fas fa-university"></i> Mandiri</div>
+                <div class="bank-card"><i class="fas fa-university"></i> BNI</div>
+            </div>
+        </div>
+
+        <!-- Bank Syariah -->
+        <div class="bank-syariah-box">
+            <span class="badge-lembaga"><i class="fas fa-mosque"></i> 3. BANK SYARIAH</span>
+            
+            <p><strong>Bank Syariah:</strong> Bank syariah adalah bank yang menjalankan kegiatan berdasarkan prinsip syariat Islam.</p>
+            <p><strong>Ciri-Ciri:</strong></p>
+            <ul class="list-content">
+                <li>Tidak menggunakan bunga</li>
+                <li>Menggunakan sistem bagi hasil</li>
+                <li>Berdasarkan prinsip syariah</li>
+            </ul>
+            <p><strong>Contoh:</strong> Bank Syariah Indonesia (BSI)</p>
+        </div>
+
+        <!-- Hadis Tentang Kejujuran -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-hadith"></i> HADIS TENTANG KEJUJURAN DAN RIBA</span>
+            
+            <div class="hadis-text">
+                تَاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ
+            </div>
+            <div class="hadis-sumber">
+                <p>Rasulullah SAW bersabda:</p>
+                <p><strong>"Pedagang yang jujur dan terpercaya akan bersama para nabi, orang-orang yang benar, dan para syuhada."</strong></p>
+                <p>(HR. Tirmidzi)</p>
+            </div>
+            
+            <p><strong>Makna Hadis:</strong></p>
+            <ul class="list-content">
+                <li>Islam mengajarkan kejujuran dalam kegiatan ekonomi</li>
+                <li>Semua transaksi harus dilakukan secara amanah</li>
+            </ul>
+        </div>
+
+        <!-- Larangan Riba -->
+        <div class="hadis-box">
+            <span class="badge-hadis"><i class="fas fa-ban"></i> LARANGAN RIBA DALAM ISLAM</span>
+            
+            <div class="hadis-text" style="font-size: 1.5rem;">
+                وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا
+            </div>
+            <div class="hadis-sumber">
+                <p>Allah SWT berfirman:</p>
+                <p><strong>"Allah menghalalkan jual beli dan mengharamkan riba."</strong></p>
+                <p>(QS. Al-Baqarah: 275)</p>
+            </div>
+            
+            <p><strong>Makna:</strong></p>
+            <ul class="list-content">
+                <li>Islam membolehkan perdagangan yang halal</li>
+                <li>Riba dilarang karena merugikan pihak lain</li>
+            </ul>
+        </div>
+
+        <!-- Koperasi -->
+        <div class="koperasi-box">
+            <span class="badge-lembaga"><i class="fas fa-handshake"></i> 4. KOPERASI</span>
+            
+            <p><strong>Pengertian:</strong> Koperasi adalah badan usaha yang beranggotakan orang-orang untuk mencapai kesejahteraan bersama.</p>
+            <p><strong>Tujuan Koperasi:</strong></p>
+            <ul class="list-content">
+                <li>Membantu ekonomi anggota</li>
+                <li>Meningkatkan kesejahteraan masyarakat</li>
+            </ul>
+            <p><strong>Contoh:</strong> Koperasi sekolah, Koperasi simpan pinjam</p>
+        </div>
+
+        <!-- OJK -->
+        <div class="ojk-box">
+            <span class="badge-lembaga"><i class="fas fa-chart-line"></i> 5. OJK (OTORITAS JASA KEUANGAN)</span>
+            
+            <p><strong>Pengertian:</strong> OJK adalah lembaga yang mengawasi kegiatan jasa keuangan di Indonesia.</p>
+            <p><strong>Tugas OJK:</strong></p>
+            <ul class="list-content">
+                <li>Mengawasi bank dan lembaga keuangan</li>
+                <li>Melindungi konsumen</li>
+                <li>Menjaga kestabilan sektor keuangan</li>
+            </ul>
+        </div>
+
+        <!-- Peranan Uang dan Lembaga Keuangan -->
+        <div class="pengertian-box">
+            <span class="badge-pengertian"><i class="fas fa-chart-line"></i> PERANAN UANG DAN LEMBAGA KEUANGAN</span>
+            
+            <ul class="list-content">
+                <li>Mempermudah transaksi</li>
+                <li>Membantu kegiatan usaha</li>
+                <li>Menjaga kestabilan ekonomi</li>
+                <li>Membantu masyarakat menyimpan dan meminjam uang</li>
+            </ul>
+        </div>
+
+        <!-- Contoh Kegiatan -->
+        <div class="pengertian-box">
+            <span class="badge-pengertian"><i class="fas fa-list"></i> CONTOH KEGIATAN DALAM KEHIDUPAN SEHARI-HARI</span>
+            
+            <ul class="list-content">
+                <li>Menabung di bank</li>
+                <li>Membayar menggunakan uang elektronik</li>
+                <li>Transfer uang melalui mobile banking</li>
+                <li>Membeli barang menggunakan uang tunai</li>
+            </ul>
+        </div>
+
+        <!-- Kesimpulan -->
+        <h3 class="sub-title"><i class="fas fa-clipboard-list"></i> Kesimpulan</h3>
+        <div class="definition-box">
+            <p>Uang merupakan alat tukar yang sangat penting dalam kegiatan ekonomi. Lembaga keuangan seperti bank, koperasi, dan OJK membantu mengatur serta memperlancar kegiatan ekonomi masyarakat. Dalam Islam, kegiatan ekonomi harus dilakukan secara jujur dan menjauhi riba agar mendapatkan keberkahan.</p>
+        </div>
+
+        <div class="nav-materi">
+            <a href="07-pasar.html" class="btn-secondary"><i class="fas fa-arrow-left"></i> Materi Sebelumnya</a>
+            <a href="09-inflasi-dan-pengangguran.html" class="btn-primary">Materi Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
